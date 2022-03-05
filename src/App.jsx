@@ -1,7 +1,10 @@
+import {InputTextField} from './services/primordialStyles'
+
 function App() {
   return (
     <div>
-      Hello World!
+      <InputTextField placeholder="First & Last name">
+      </InputTextField>
     </div>
   )
 }
