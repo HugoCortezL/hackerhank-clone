@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
     body{
         font-size: 13px; 
-        font-family: "Source Code Pro", sans-serif;
+        font-family: "Open Sans", sans-serif;
         background-image: linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
         -webkit-font-smoothing: antialiased !important;
         min-height: 110vh;

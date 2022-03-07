@@ -1,3 +1,4 @@
+
 import GlobalStyle from './styles/global'
 
 import Home from './pages/Home'
