@@ -16,9 +16,9 @@ export const PrimaryButton = styled.button`
     border: 0;
     cursor: pointer;
     font-weight: 700;
+    letter-spacing: 1.5px;
     &:hover{
         box-shadow: 0 3px 6px rgb(27 169 76 / 40%);
-
     }
 `
 
@@ -62,5 +62,27 @@ export const InputTextField = styled.input`
     width: 100%;
     &:focus{
         box-shadow: inset 0 1px 4px rgba(0,0,0,.1),inset 0 -2px 0 var(--color-shade-dark);
+    }
+`
+
+export const ChooseContainer = styled.div`
+    cursor: pointer;
+    h3{
+        font-size: 2.077em;
+        font-weight: 700;
+        color: #39424e;
+        line-height: 1.35em;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: 1.231em;
+        line-height: 1.538em;
+        font-weight: 400;
+        color: #576871;
+        margin-bottom: 30px;
+    }
+
+    & + div{
+        padding-left: 30px;
     }
 `
