@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import {SignUpLogInContainer, TabsContainer, Tab, ContentsContainer, Content, FormContainer, RememberMeContainer} from './styles'
-import {InputContainer, PrimaryButton} from '../../services/primordialStyles'
+import {InputContainer, PrimaryButton} from '../../styles/principalComponents'
 import SocialMedia from '../SocialMedia'
 import { AiOutlineUser, AiOutlineMail, AiOutlineLock } from 'react-icons/ai'
 
@@ -60,7 +60,7 @@ export default function SignUpLogIn() {
                 <FormContainer>
                         <form action="">
                             <InputContainer>
-                                <input type="text" placeholder="First & Last name"/>
+                                <input type="text" placeholder="Your username or email"/>
                                 <span>
                                     <AiOutlineUser size={22} color="#738f93"/>
                                 </span>

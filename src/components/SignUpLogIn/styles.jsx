@@ -25,7 +25,7 @@ export const Tab = styled.button`
     border: none;
     display: block;
     color: inherit;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     flex: 1;
     padding: 0;
@@ -85,9 +85,7 @@ export const RememberMeContainer = styled.div`
     justify-content: space-between;
     margin-bottom: 10px;
     padding: 19px 0;
-    /*TESTE */
-
-
+    
     .container {
     display: block;
     position: relative;
@@ -100,7 +98,6 @@ export const RememberMeContainer = styled.div`
     user-select: none;
     }
 
-    /* Hide the browser's default checkbox */
     .container input {
     position: absolute;
     opacity: 0;
@@ -109,58 +106,46 @@ export const RememberMeContainer = styled.div`
     width: 0;
     }
 
-    /* Create a custom checkbox */
     .checkmark {
     position: absolute;
     top: 0;
     left: -10px;
     height: 18px;
     width: 18px;
-    background-color: #E7EEEF; /* Cor de fundo not(checked)*/
+    background-color: #E7EEEF;
+    box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
     }
 
-    /* On mouse-over, add a grey background color */
     .container:hover input ~ .checkmark {
-    background-color: #E7EEEF; /* cor de fundo quando hover antes do checked */
+    background-color: #E7EEEF;
     }
 
-    /* When the checkbox is checked, add a blue background */
     .container input:checked ~ .checkmark {
-    background-color: #068932;/*Cor de fundo do checkbox*/
+    background-color: #068932;
     }
 
-    /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
     content: "";
     position: absolute;
     display: none;
     }
 
-    /* Show the checkmark when checked */
     .container input:checked ~ .checkmark:after {
     display: block;
     }
 
-    /* Style the checkmark/indicator */
     .container .checkmark:after {
     left: 6px;
     top: 2px;
     width: 3px;
     height: 8px;
-    border: solid white; /* Cor do check */
+    border: solid white;
     border-width: 0 3px 3px 0;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     }
-
-
-
-
-
-
-    /*TESTE */
 
     div label{
         margin-left: 10px;

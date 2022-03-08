@@ -11,7 +11,7 @@ export default createGlobalStyle`
     body{
         font-size: 13px; 
         font-family: "Open Sans", sans-serif;
-        background-image: linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
+        background: linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
         -webkit-font-smoothing: antialiased !important;
         -webkit-text-size-adjust: 100% !important;
         min-height: 100vh;
@@ -19,5 +19,9 @@ export default createGlobalStyle`
 
     button{
         font-family: "Open Sans", sans-serif;
+    }
+
+    .link-react-dom{
+        text-decoration: none;
     }
 `

@@ -31,7 +31,7 @@ export const Container = styled.div`
         font-size: 13px;
         font-weight: 400;
         a{
-            color: var(--color-link);
+            color: #097BBF;
             cursor: pointer;
             font-weight: 400;
             text-decoration: none;

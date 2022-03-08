@@ -5,8 +5,8 @@ export default function Header() {
     (function () {
         var menu = document.getElementById('menu'); // colocar em cache
         window.addEventListener('scroll', function () {
-            if (window.scrollY > 30) menu.classList.add('menuFixo'); // > 0 ou outro valor desejado
-            else menu.classList.remove('menuFixo');
+            if (window.scrollY > 25) menu.classList.add('fixed-menu'); // > 0 ou outro valor desejado
+            else menu.classList.remove('fixed-menu');
         });
     })();
 

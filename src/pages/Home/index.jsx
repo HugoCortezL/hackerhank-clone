@@ -1,6 +1,8 @@
 import {Container, Content, LeftSide, RightSide, FlexContainer, FooterContainer} from './styles'
-import {PrimaryButton, SecundaryButton, ChooseContainer} from '../../services/primordialStyles'
+import {PrimaryButton, SecundaryButton, ChooseContainer} from '../../styles/principalComponents'
 import Header from '../../components/Header'
+import {Link} from 'react-router-dom'
+
 export default function Home() {
   return (
     <>
@@ -28,17 +30,19 @@ export default function Home() {
                 </PrimaryButton>
               </ChooseContainer>
               <ChooseContainer>
-                <h3>For Job Seekers</h3>
-                <p>
-                  <span>Join over 18 million developers,</span>
-                  <br />
-                  <span>practice coding skills, prepare for</span>
-                  <br />
-                  <span>Interviews and get hired.</span>
-                </p>
-                <SecundaryButton>
-                  Sign Up & Code
-                </SecundaryButton>
+                <Link to="/login" class="link-react-dom">
+                  <h3>For Job Seekers</h3>
+                  <p>
+                    <span>Join over 18 million developers,</span>
+                    <br />
+                    <span>practice coding skills, prepare for</span>
+                    <br />
+                    <span>Interviews and get hired.</span>
+                  </p>
+                  <SecundaryButton>
+                    Sign Up & Code
+                  </SecundaryButton>
+                </Link>
               </ChooseContainer>
             </FlexContainer>
           </LeftSide>
