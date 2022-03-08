@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import {Container, TabsContainer, Tab, ContentsContainer, Content, FormContainer, RememberMeContainer} from './styles'
+import {SignUpLogInContainer, TabsContainer, Tab, ContentsContainer, Content, FormContainer, RememberMeContainer} from './styles'
 import {InputContainer, PrimaryButton} from '../../services/primordialStyles'
 import SocialMedia from '../SocialMedia'
 import { AiOutlineUser, AiOutlineMail, AiOutlineLock } from 'react-icons/ai'
@@ -11,7 +11,7 @@ export default function SignUpLogIn() {
         setToggleState(index);
     };
     return (
-        <Container>
+        <SignUpLogInContainer>
             <TabsContainer>
                 <Tab 
                     className={toggleState === 1 ? "active" : ""}
@@ -73,7 +73,7 @@ export default function SignUpLogIn() {
                             </InputContainer>
                             <RememberMeContainer>
                                 <div style={{display: "flex", alignItems: "center"}}>
-                                    <label className="container" for="remember">Remember me
+                                    <label className="container" htmlFor="remember">Remember me
                                     <input type="checkbox" id="remember"/>
                                     <span className="checkmark"></span>
                                     </label>
@@ -92,6 +92,6 @@ export default function SignUpLogIn() {
                     <SocialMedia/>
                 </Content>
             </ContentsContainer>
-        </Container>
+        </SignUpLogInContainer>
     )
 }

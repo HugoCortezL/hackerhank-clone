@@ -32,12 +32,10 @@ export const SocialMediaContainer =  styled.div`
 `
 
 export const SocialMedias =  styled.div`
-    justify-content: flex-start;
     display: flex;
     flex: 1;
     border-right: 1px solid var(--color-shade-light,#e7eeef);
     align-items: center;
-    justify-content: space-around;
     &:last-child{
         justify-content: flex-end;
         border-right: none;

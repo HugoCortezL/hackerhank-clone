@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const SignUpLogInContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
     color: #0e141e;
     position: relative;
-    width: 480px;
+    width: 100%;
     background: #fff;
     box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
-    margin: 20px 20px;
+    overflow: hidden;
 `
 
 export const TabsContainer = styled.div`
@@ -42,9 +42,9 @@ export const Tab = styled.button`
         color: #0e141e;
         &::after{
             position: absolute;
-            right: 0px;
+            right: -10px;
             bottom: -20px;
-            left: 0px;
+            left: -10px;
             z-index: 10;
             display: block;
             height: 20px;

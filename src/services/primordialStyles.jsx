@@ -16,7 +16,7 @@ export const PrimaryButton = styled.button`
     border: 0;
     cursor: pointer;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     &:hover{
         box-shadow: 0 3px 6px rgb(27 169 76 / 40%);
     }
