@@ -45,23 +45,30 @@ export const SecundaryButton = styled.button`
         background-color: #FFFFFF !important;
     }
 `
-
-export const InputTextField = styled.input`
-    margin-bottom: 10px;
+export const InputContainer = styled.div`
     position: relative;
-    box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
-    padding: 1px 15px 1px 38px;
-    border: 0;
-    border-radius: 0;
-    background-color: #F3F7F7;
-    color: #0E141E;
-    height: 56px;
-    outline: none; //REIRAR PAR VER SE O GLOBAL ESTÁ FUNCIONANDO
-    font-size: 18px;
-    font-weight: 400;
-    width: 100%;
-    &:focus{
-        box-shadow: inset 0 1px 4px rgba(0,0,0,.1),inset 0 -2px 0 var(--color-shade-dark);
+    input{
+        margin-bottom: 10px;
+        position: relative;
+        box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+        padding: 1px 15px 1px 52px;
+        border: 0;
+        border-radius: 0;
+        background-color: #F3F7F7;
+        color: #0E141E;
+        height: 56px;
+        outline: none; //REIRAR PAR VER SE O GLOBAL ESTÁ FUNCIONANDO
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        &::placeholder{
+            color: #738f93;
+        }
+    }
+    span{
+        position: absolute;
+        top: 17px;
+        left: 15px;
     }
 `
 

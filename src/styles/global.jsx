@@ -13,7 +13,8 @@ export default createGlobalStyle`
         font-family: "Open Sans", sans-serif;
         background-image: linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
         -webkit-font-smoothing: antialiased !important;
-        -webkit-text-size-adjust: 100% !important; 
+        -webkit-text-size-adjust: 100% !important;
+        min-height: 100vh;
     }
 
     button{
